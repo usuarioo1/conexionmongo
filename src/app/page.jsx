@@ -9,7 +9,7 @@ async function menu() {
 }
 
 const getMenu = async () => {
-  const res = await fetch('http://localhost:3000/api/comidas', {cache:'no-store'})
+  const res = await fetch('https://conexionmongo.vercel.app/api/comidas', {cache:'no-store'})
   const data = await res.json();
   console.log(data)
 
